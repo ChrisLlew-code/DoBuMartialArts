@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DoBu Martial Arts</title>
+  
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto+Condensed:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="videostyle.css">
+</head>
+
+<body>
+  <!-- Navbar -->
+  <div id="navbar">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="news.html">News</a></li>
+      <li><a href="classes.html">Classes</a></li>
+      <li><a href="tutors.html">Tutors</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </div>
+
+  <!-- Background Video -->
+  <video autoplay muted loop id="Videos">
+    <source src="videos/judothrow.mp4" type="video/mp4">
+    Your browser does not support HTML5 video.
+  </video>
+
+  <!-- Hero Section -->
+  <div class="hero">
+    <div class="logo-title">
+      <img src="Images/logo2.png" alt="DoBu Martial Arts Logo">
+      <h1>DoBu Martial Arts</h1>
+    </div>
+    <p>
+      Welcome to DoBu Martial Arts, where strength, discipline, and respect are at the heart of everything we do.
+      Learn from our 3rd Dan black belt instructors in our family-friendly dojo.
+    </p>
+    <button id="myBtn" onclick="toggleVideo()">Pause</button>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="social-icons">
+      <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+      <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+      <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="#" target="_blank"><i class="fab fa-youtube"></i></a>
+    </div>
+  </footer>
+
+  <!-- Video Toggle Script -->
+  <script>
+    const video = document.getElementById("Videos");
+    const btn = document.getElementById("myBtn");
+
+    function toggleVideo() {
+      if (video.paused) {
+        video.play();
+        btn.innerText = "Pause";
+      } else {
+        video.pause();
+        btn.innerText = "Play";
+      }
+    }
+  </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+

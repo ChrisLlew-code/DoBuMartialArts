@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto+Condensed:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="videostyle.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <div id="navbar">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="news.html">News</a></li>
+      <li><a href="classes.html">Classes</a></li>
+      <li><a href="tutors.html">Tutors</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </div>
+
+  <!-- Hero Section -->
+  <div class="hero-image">
+    <div class="hero-text">
+      <h1>Our Story</h1>
+      <p>Strength - Discipline - Respect</p>
+      <a href="contact.html" class="btn">Contact Us</a>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="social-icons">
+      <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+      <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+      <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="#" target="_blank"><i class="fab fa-youtube"></i></a>
+    </div>
+  </footer>
+
+  <!-- Scroll Shrink Script -->
+  <script>
+    const hero = document.querySelector('.hero-image');
+    const heroText = document.querySelector('.hero-text');
+
+    window.addEventListener('scroll', () => {
+      const scrollY = window.scrollY;
+
+      // Hero image scale
+      let scale = 1 - scrollY / 1000;  // slower shrink
+      if (scale < 0.8) scale = 0.8;   // minimum scale
+      hero.style.transform = `scale(${scale})`;
+
+      // Hero text scale (optional, keeps text proportional)
+      let textScale = 1 - scrollY / 2000;
+      if (textScale < 0.9) textScale = 0.9;
+      heroText.style.transform = `translate(-50%, -35%) scale(${textScale})`;
+    });
+  </script>
+ 
+
+  <section class="about-section">
+  <div class="about-container">
+    <h1>Our Story</h1>
+    <p>
+      Founded over two decades ago, <strong>DoBu Martial Arts</strong> began with a simple idea to create a community where discipline, respect, and perseverance come together on the mat. 
+      What started as a handful of dedicated students training in a local hall has since grown into one of the region's most recognised centres for traditional judo practice and modern athletic development.
+    </p>
+
+    <p>
+      Our club prides itself on balancing <strong>heritage with innovation</strong>. We uphold the traditional values of martial arts, such as courtesy, courage, and self-control — while embracing new coaching techniques, athlete conditioning methods, and community engagement initiatives. 
+      Every session is guided by our experienced instructors, many of whom have competed nationally and internationally.
+    </p>
+
+    <h2>What We Offer</h2>
+    <ul>
+      <li><strong>Structured Training Plans</strong> From complete beginners to elite competitors, our tailored training programs help students develop technical precision, physical strength, and mental discipline.</li>
+      <li><strong>Private Coaching</strong> One-to-one sessions designed to refine your throws, groundwork, and tactical approach.</li>
+      <li><strong>Competition Preparation</strong> Focused support for athletes aiming to compete at regional or national levels, including weight management and competition mindset training.</li>
+      <li><strong>Youth and Family Classes</strong> Fun, confidence-building sessions where younger members and families can learn together in a safe and positive environment.</li>
+      <li><strong>Community Engagement</strong> Regular demonstrations, charity events, and open sessions designed to promote physical activity and teamwork within the local area.</li>
+    </ul>
+
+    <h2>Our Philosophy</h2>
+    <p>
+      At DoBu Martial Arts, we believe that judo is more than a sport, it is a lifelong journey of self-improvement. Whether you are stepping onto the mat for the first time or chasing your next medal, our mission is to help you unlock your potential through discipline, respect, and resilience.
+    </p>
+  </div>
+</section>
+</body>
+</html>
+
+
