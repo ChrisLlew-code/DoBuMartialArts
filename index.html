@@ -3,9 +3,16 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="index, follow">
   <title>DoBu Martial Arts</title>
-    <meta name="description" content="Join DoBu Martial Arts — a family-friendly dojo focused on strength, discipline and respect. Train with expert 3rd Dan black belt instructors.">
+  <meta name="description" content="Join DoBu Martial Arts — a family-friendly dojo focused on strength, discipline and respect. Train with expert 3rd Dan black belt instructors.">
+  <meta name="keywords" content="martial arts, dojo, judo, karate, black belt instructors, family-friendly, 3rd Dan, martial arts training">
+  <meta property="og:title" content="DoBu Martial Arts - Family-Friendly Dojo">
   <meta property="og:description" content="Join DoBu Martial Arts — a family-friendly dojo focused on strength, discipline and respect. Train with expert 3rd Dan black belt instructors.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="Images/logo2.png">
+  <link rel="canonical" href="index.html">
+
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto+Condensed:wght@400;700&display=swap" rel="stylesheet">
 
@@ -14,6 +21,21 @@
 
   <!-- Custom CSS -->
   <link rel="stylesheet" href="videostyle.css">
+
+  <!-- Structured Data (JSON-LD) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "DoBu Martial Arts",
+    "image": "Images/logo2.png",
+    "description": "Family-friendly martial arts dojo with expert 3rd Dan black belt instructors specializing in strength, discipline, and respect.",
+    "url": "index.html",
+    "priceRange": "$$",
+    "areaServed": "Local",
+    "serviceType": "Martial Arts Training"
+  }
+  </script>
 </head>
 
 <body>
@@ -45,16 +67,16 @@
       Welcome to DoBu Martial Arts, where strength, discipline, and respect are at the heart of everything we do.
       Learn from our 3rd Dan black belt instructors in our family-friendly dojo.
     </p>
-    <button id="myBtn" onclick="toggleVideo()">Pause</button>
+    <button id="myBtn" onclick="toggleVideo()" aria-label="Toggle background video playback">Pause</button>
   </div>
 
   <!-- Footer -->
   <footer>
     <div class="social-icons">
-      <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
-      <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
-      <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
-      <a href="#" target="_blank"><i class="fab fa-youtube"></i></a>
+      <a href="#" target="_DoBu"><i class="fab fa-facebook-f"></i></a>
+      <a href="#" target="_DoBu"><i class="fab fa-twitter"></i></a>
+      <a href="#" target="_DoBu"><i class="fab fa-instagram"></i></a>
+      <a href="#" target="_DoBu"><i class="fab fa-youtube"></i></a>
     </div>
   </footer>
 
@@ -75,7 +97,6 @@
   </script>
 </body>
 </html>
-
 
 
 
