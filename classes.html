@@ -3,9 +3,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Classes</title>
-    <meta name="description" content="Join DoBu Martial Arts — a family-friendly dojo focused on strength, discipline and respect. Train with expert 3rd Dan black belt instructors.">
-  <meta property="og:description" content="Join DoBu Martial Arts — a family-friendly dojo focused on strength, discipline and respect. Train with expert 3rd Dan black belt instructors.">
+  <meta name="robots" content="index, follow">
+  <title>Classes & Pricing - DoBu Martial Arts</title>
+  <meta name="description" content="Explore DoBu Martial Arts classes and pricing. We offer judo, karate, jiu-jitsu, and Muay Thai for all levels. Flexible membership options from £25/month with experienced instructors.">
+  <meta name="keywords" content="martial arts classes, judo classes, karate classes, pricing, membership, fitness training, private tuition">
+  <meta property="og:title" content="Classes & Pricing - DoBu Martial Arts">
+  <meta property="og:description" content="Explore DoBu Martial Arts classes and pricing. We offer judo, karate, jiu-jitsu, and Muay Thai for all levels. Flexible membership options from £25/month with experienced instructors.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="Images/logo2.png">
+  <link rel="canonical" href="classes.html">
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto+Condensed:wght@400;700&display=swap" rel="stylesheet">
 
@@ -14,6 +20,31 @@
 
   <!-- Custom CSS -->
   <link rel="stylesheet" href="videostyle.css">
+
+  <!-- Structured Data (JSON-LD) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "DoBu Martial Arts",
+    "image": "Images/logo2.png",
+    "description": "Martial arts classes including judo, karate, jiu-jitsu, and Muay Thai. Flexible memberships and private tuition available.",
+    "url": "classes.html",
+    "priceRange": "$$",
+    "areaServed": "Local",
+    "serviceType": "Martial Arts Training, Group Classes, Private Tuition",
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Membership Plans",
+      "itemListElement": [
+        {"@type": "Offer", "name": "Basic Membership", "price": "25", "priceCurrency": "GBP", "description": "1 martial art - 2 sessions per week"},
+        {"@type": "Offer", "name": "Intermediate Membership", "price": "35", "priceCurrency": "GBP", "description": "1 martial art - 3 sessions per week"},
+        {"@type": "Offer", "name": "Advanced Membership", "price": "45", "priceCurrency": "GBP", "description": "Any 2 martial arts - 5 sessions per week"},
+        {"@type": "Offer", "name": "Elite Membership", "price": "60", "priceCurrency": "GBP", "description": "Unlimited classes"}
+      ]
+    }
+  }
+  </script>
 </head>
 <body>
   <div id="navbar">
@@ -33,9 +64,9 @@
   <h2>Prices and Membership Options</h2>
   <table class="pricing-table">
     <tr><th>Membership Type</th><th>Details</th><th>Monthly Fee (£)</th></tr>
-    <tr><td>Basic</td><td>1 martial art – 2 sessions per week</td><td>25.00</td></tr>
-    <tr><td>Intermediate</td><td>1 martial art – 3 sessions per week</td><td>35.00</td></tr>
-    <tr><td>Advanced</td><td>Any 2 martial arts – 5 sessions per week</td><td>45.00</td></tr>
+    <tr><td>Basic</td><td>1 martial art - 2 sessions per week</td><td>25.00</td></tr>
+    <tr><td>Intermediate</td><td>1 martial art - 3 sessions per week</td><td>35.00</td></tr>
+    <tr><td>Advanced</td><td>Any 2 martial arts - 5 sessions per week</td><td>45.00</td></tr>
     <tr><td>Elite</td><td>Unlimited classes</td><td>60.00</td></tr>
     <tr><td>Private Tuition</td><td>Martial arts (per hour)</td><td>15.00</td></tr>
     <tr><td>Junior Membership</td><td>All kids martial arts sessions</td><td>25.00</td></tr>
@@ -45,7 +76,7 @@
   <h2>Specialist Courses and Fitness Training</h2>
   <table class="pricing-table">
     <tr><th>Course</th><th>Details</th><th>Fee (£)</th></tr>
-    <tr><td>Beginners’ Self-Defence</td><td>6-week course (2×1-hour sessions per week)</td><td>180.00</td></tr>
+    <tr><td>Beginners Self-Defence</td><td>6-week course (2×1-hour sessions per week)</td><td>180.00</td></tr>
     <tr><td>Fitness Room</td><td>Per visit</td><td>6.00</td></tr>
     <tr><td>Personal Fitness Training</td><td>Per hour</td><td>35.00</td></tr>
   </table>
@@ -123,5 +154,4 @@
 </script>
 
   </body>
-
 </html>
