@@ -3,9 +3,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>News</title>
-    <meta name="description" content="Join DoBu Martial Arts — a family-friendly dojo focused on strength, discipline and respect. Train with expert 3rd Dan black belt instructors.">
-  <meta property="og:description" content="Join DoBu Martial Arts — a family-friendly dojo focused on strength, discipline and respect. Train with expert 3rd Dan black belt instructors.">
+  <meta name="robots" content="index, follow">
+  <title>News & Events - DoBu Martial Arts</title>
+  <meta name="description" content="Stay updated with DoBu Martial Arts events and news. Discover upcoming competitions, seminars, and training events. Sussex Judo Open, Winter Training Seminar, and more.">
+  <meta name="keywords" content="news, events, judo competition, training seminar, Sussex Open, martial arts events">
+  <meta property="og:title" content="News & Events - DoBu Martial Arts">
+  <meta property="og:description" content="Stay updated with DoBu Martial Arts events and news. Discover upcoming competitions, seminars, and training events.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="Images/logo2.png">
+  <link rel="canonical" href="news.html">
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto+Condensed:wght@400;700&display=swap" rel="stylesheet">
 
@@ -14,6 +20,43 @@
 
   <!-- Custom CSS -->
   <link rel="stylesheet" href="videostyle.css">
+
+  <!-- Structured Data (JSON-LD) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "DoBu Martial Arts",
+    "image": "Images/logo2.png",
+    "url": "news.html",
+    "event": [
+      {
+        "@type": "Event",
+        "name": "Sussex Judo Open",
+        "description": "Annual Sussex Open judo competition suitable for all skill levels.",
+        "startDate": "2024-12-12",
+        "endDate": "2024-12-12",
+        "organizer": {
+          "@type": "Organization",
+          "name": "DoBu Martial Arts",
+          "url": "index.html"
+        }
+      },
+      {
+        "@type": "Event",
+        "name": "Winter Training Seminar",
+        "description": "Special seminar with guest instructors focusing on throws and groundwork. Limited spaces available.",
+        "startDate": "2025-01-20",
+        "endDate": "2025-01-20",
+        "organizer": {
+          "@type": "Organization",
+          "name": "DoBu Martial Arts",
+          "url": "index.html"
+        }
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
   <div id="navbar">
@@ -27,16 +70,16 @@
     </ul>
 </div>
 <section class="news fade-in">
-  <h2>Upcoming Events</h2>
+  <h1>Upcoming Events</h1>
   <div class="news-grid">
     <article class="news-item">
-      <h3>Sussex Judo Open – 12th December</h3>
+      <h2>Sussex Judo Open – 12th December</h2>
       <p>Join our competitors at the annual Sussex Open! Suitable for all skill levels. Registration closes 5th December.</p>
       <a href="#" class="btn">Learn More</a>
     </article>
 
     <article class="news-item">
-      <h3>Winter Training Seminar – 20th January</h3>
+      <h2>Winter Training Seminar – 20th January</h2>
       <p>Special seminar with guest instructors focusing on throws and groundwork. Limited spaces available.</p>
       <a href="#" class="btn">Reserve Spot</a>
     </article>
@@ -54,5 +97,4 @@
     </div>
   </footer>
   </body>
-
 </html>
