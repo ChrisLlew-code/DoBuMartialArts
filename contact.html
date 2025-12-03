@@ -3,9 +3,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact</title>
-    <meta name="description" content="Join DoBu Martial Arts — a family-friendly dojo focused on strength, discipline and respect. Train with expert 3rd Dan black belt instructors.">
-  <meta property="og:description" content="Join DoBu Martial Arts — a family-friendly dojo focused on strength, discipline and respect. Train with expert 3rd Dan black belt instructors.">
+  <meta name="robots" content="index, follow">
+  <title>Contact Us - DoBu Martial Arts</title>
+  <meta name="description" content="Get in touch with DoBu Martial Arts. Contact us to ask questions, join classes, or book private tuition. Located in Crawley, RH10 1AB.">
+  <meta name="keywords" content="contact, martial arts, DoBu, Crawley, phone, email, message, location">
+  <meta property="og:title" content="Contact DoBu Martial Arts">
+  <meta property="og:description" content="Get in touch with DoBu Martial Arts. Contact us to ask questions, join classes, or book private tuition. Located in Crawley, RH10 1AB.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="Images/logo2.png">
+  <link rel="canonical" href="contact.html">
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto+Condensed:wght@400;700&display=swap" rel="stylesheet">
 
@@ -14,6 +20,33 @@
 
   <!-- Custom CSS -->
   <link rel="stylesheet" href="videostyle.css">
+
+  <!-- Structured Data (JSON-LD) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "DoBu Martial Arts",
+    "image": "Images/logo2.png",
+    "description": "Professional martial arts academy offering judo, karate, jiu-jitsu, and Muay Thai classes for all ages and skill levels.",
+    "url": "contact.html",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "123 Dojo Lane",
+      "addressLocality": "Crawley",
+      "postalCode": "RH10 1AB",
+      "addressCountry": "GB"
+    },
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "contactType": "Customer Service",
+      "email": "contact@dobumaritalarts.com"
+    },
+    "priceRange": "$$",
+    "areaServed": "Crawley, Sussex",
+    "serviceType": "Martial Arts Training"
+  }
+  </script>
 </head>
 <body>
   <div id="navbar">
@@ -27,7 +60,7 @@
     </ul>
 </div>
 <section class="contact fade-in">
-  <h2>Contact Us</h2>
+  <h1>Contact Us</h1>
   <p>Have questions or want to join a class? Send us a message below!</p>
 
   <div class="contact-container">
@@ -45,10 +78,10 @@
     </form>
 
     <div class="contact-info">
-      <h3>Visit Us</h3>
+      <h2>Visit Us</h2>
       <p>DoBu Martial Arts Academy<br>123 Dojo Lane, Crawley, RH10 1AB</p>
 
-      <h3>Find Us</h3>
+      <h2>Find Us</h2>
       <iframe
         src="https://www.google.com/maps?q=Crawley,+UK&output=embed"
         width="100%" height="250" style="border:0;" allowfullscreen>
@@ -67,5 +100,4 @@
     </div>
   </footer>
   </body>
-
 </html>
